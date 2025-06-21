@@ -7,7 +7,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/auth/signup', form);
+    await axios.post('https://frontend-psi-six-94.vercel.app/signup', form);
     window.location.href = '/login';
   };
 

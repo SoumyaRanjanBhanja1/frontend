@@ -7,7 +7,7 @@ export default function Login({ setUser }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post('http://localhost:5000/auth/login', form, { withCredentials: true });
+    const res = await axios.post('https://frontend-psi-six-94.vercel.app/login', form, { withCredentials: true });
     setUser(res.data.user);
     window.location.href = '/';
   };
